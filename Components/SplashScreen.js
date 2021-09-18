@@ -37,19 +37,19 @@ export default function SplashScreen() {
           // For same Height for non safe Area Devices...
           toValue: -Dimensions.get("window").height + (edges.top + 40),
           useNativeDriver: true,
-          delay: 2000,
+          delay: 3000,
         }),
         Animated.timing(scaleLogo, {
           // Scaling to 0.35
           toValue: 0.3,
           useNativeDriver: true,
-          delay: 2000,
+          delay: 3000,
         }),
         Animated.timing(scaleTitle, {
           // Scaling to 0.8
           toValue: 0.8,
           useNativeDriver: true,
-          delay: 2000,
+          delay: 3000,
         }),
         Animated.timing(moveLogo, {
           // Moving to Right Most...
@@ -58,7 +58,7 @@ export default function SplashScreen() {
             y: Dimensions.get("window").height / 2 - 5,
           },
           useNativeDriver: true,
-          delay: 2000,
+          delay: 3000,
         }),
         Animated.timing(moveTitle, {
           // Moving to Right Most...
@@ -68,15 +68,15 @@ export default function SplashScreen() {
             y: Dimensions.get("window").height / 2 - 90,
           },
           useNativeDriver: true,
-          delay: 2000,
+          delay: 3000,
         }),
         Animated.timing(contentTransition, {
           toValue: 0,
           useNativeDriver: true,
-          delay: 2000,
+          delay: 3000,
         }),
       ]).start();
-    }, 500);
+    }, 1000);
   }, []);
 
   // Going to Move Up like Nav Bar...
